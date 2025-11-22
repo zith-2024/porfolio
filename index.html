@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZITH WATCH COLLECTION - Luxury Timepieces</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <h1>ZITH WATCH COLLECTION</h1>
+                    <nav class="desktop-nav">
+                        <a href="collection.html">Collections</a>
+                        <a href="brand.html">Brands</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+                <div class="header-right">
+                    <button class="btn-icon desktop-only" id="searchBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+                    </button>
+                    <button class="btn btn-primary desktop-only">Book Appointment</button>
+                    <button class="btn-icon mobile-only" id="menuToggle">
+                        <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                        <svg id="closeIcon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu hidden">
+            <nav>
+                <a href="#">Collections</a>
+                <a href="#">Brands</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <button class="btn btn-primary full-width">Book Appointment</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-pattern"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="badge">2025 Collection</span>
+                <h2>
+                    Timeless Elegance,<br>
+                    Exceptional Craftsmanship
+                </h2>
+                <p>
+                    Discover the world's most prestigious timepieces. Each watch represents the pinnacle of
+                    horological artistry and engineering excellence.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-large btn-white">Explore Collection</button>
+                    <button class="btn btn-large btn-white">Learn More</button>
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section id="filters" class="filters">
+        <div class="container">
+            <div class="filters-top">
+                <div class="search-wrapper">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+                    <input type="text" id="searchInput" placeholder="Search watches..." class="search-input">
+                </div>
+                <div class="category-filters">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+                    <div id="categoryButtons" class="filter-buttons"></div>
+                </div>
+            </div>
+            <div id="brandBadges" class="brand-badges"></div>
+        </div>
+    </section>
+
+    <!-- Watch Grid -->
+    <section class="watch-grid">
+        <div class="container">
+            <div class="grid-header">
+                <div>
+                    <h3>Featured Timepieces</h3>
+                    <p id="watchCount"></p>
+                </div>
+            </div>
+            <div id="watchContainer" class="grid"></div>
+            <div id="emptyState" class="empty-state hidden">
+                <p>No watches found matching your criteria.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>HOROLOGIE</h4>
+                    <p>The world's premier destination for luxury timepieces since 1985.</p>
+                </div>
+                <div>
+                    <h5>Shop</h5>
+                    <ul>
+                        <li><a href="#">All Watches</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Limited Editions</a></li>
+                        <li><a href="#">Pre-Owned</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Authentication</a></li>
+                        <li><a href="#">Servicing</a></li>
+                        <li><a href="#">Warranty</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Horologie. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
